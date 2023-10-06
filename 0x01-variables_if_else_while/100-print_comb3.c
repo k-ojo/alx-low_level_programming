@@ -12,17 +12,21 @@ int main(void)
 
 	for (z = 0; z < 10; z++)
 	{
-		for (i = 0; i < 10; i++)
+		for (i = z; i < 10; i++)
 		{
-			putchar(i + '0');
-			putchar(z + '0');
-			if (i != 9 || z != 9)
+			if (i != z)
 			{
+				putchar(z + '0');
+				putchar(i + '0');
+				if (i == 9 && z == 8)
+					continue;
 				putchar(',');
 				putchar(' ');
 			}
+
 		}
 	}
+
 
 	putchar('\n');
 	return (0);
