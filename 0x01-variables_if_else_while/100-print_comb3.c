@@ -10,17 +10,18 @@ int main(void)
 	int i;
 	int z;
 
-	for (i = 0; i < 10; i++)
+	for(z = 0; z < 10; z++)
 	{
-		for (z = 0; z < 10; z++)
+		for (i = 0; i < 10; i++)
 		{
 			putchar(i + '0');
 			putchar(z + '0');
-			if (i != 9 && z ! = 9)
+			if (i != 9 || z != 9)
 			{
 				putchar(',');
 				putchar(' ');
 			}
+		}
 	}
 
 	putchar('\n');
