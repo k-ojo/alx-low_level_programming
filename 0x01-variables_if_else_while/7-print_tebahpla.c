@@ -15,6 +15,5 @@ int main(void)
 		putchar(a[26 - i]);
 	}
 
-	putchar('\n');
 	return (0);
 }
