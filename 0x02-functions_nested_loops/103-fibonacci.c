@@ -13,16 +13,14 @@ int main(void)
 	f = 1;
 	s = 2;
 
-	while (0)
+	while (c <= 4000000)
 	{
 		c = f + s;
 		f = s;
 		s = c;
-		if (c >= 4000000)
-			return (0);
 		if (c % 2 == 0)
 			count += c;
 	}
-	printf("%li", count);
+	printf("%li\n", count);
 	return (0);
 }
