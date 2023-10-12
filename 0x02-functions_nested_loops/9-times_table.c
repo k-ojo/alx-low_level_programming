@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
  * times_table- multiplication table
  *
@@ -26,10 +24,10 @@ void times_table(void)
 			}
 
 			_putchar(n * i + '0');
-			if(i != 9)
+			_putchar(' ');
+			if (i != 9)
 			{
 				_putchar(',');
-				_putchar(' ');
 				_putchar(' ');
 			}
 		}
