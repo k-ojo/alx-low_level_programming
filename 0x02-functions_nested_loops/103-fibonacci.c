@@ -10,6 +10,7 @@ int main(void)
 	long int f, s, c, count;
 
 	count = 2;
+	c = 3;
 	f = 1;
 	s = 2;
 
