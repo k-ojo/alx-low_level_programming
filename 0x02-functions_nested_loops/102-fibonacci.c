@@ -7,7 +7,9 @@
  */
 int main(void)
 {
-	int f, s, c = {1, 2, 0};
+	int f, s, c;
+	f = 1;
+	s = 2;
 	char i;
 
 	printf("1, 2,")
@@ -17,9 +19,9 @@ int main(void)
 		s = c;
 		f = s;
 		if (i == 50)
-			printf("%i\n", i);
+			printf("%i\n", c);
 		else
-			printf("%i, ", i);
+			printf("%i, ", c);
 	}
 	return (0);
 }
