@@ -19,9 +19,9 @@ int main(void)
 		s = c;
 		f = s;
 		if (i == 50)
-			printf("%i\n", c);
+			printf("%li\n", c);
 		else
-			printf("%i, ", c);
+			printf("%li, ", c);
 	}
 	return (0);
 }
