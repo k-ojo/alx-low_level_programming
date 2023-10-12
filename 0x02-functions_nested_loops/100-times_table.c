@@ -21,7 +21,7 @@ void print_times_table(int n)
 				if (j != 0)
 					printf("0,  ");
 				else
-					print("0\n");
+					printf("0\n");
 				continue;
 			}
 			if (i * j < 10)
