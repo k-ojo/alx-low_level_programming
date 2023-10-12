@@ -19,7 +19,7 @@ int main(void)
 		f = s;
 		s = c;
 		if (c >= 4000000)
-			return;
+			return (0);
 		if (c % 2 == 0)
 			count += c;
 	}
