@@ -14,29 +14,29 @@ void print_times_table(int n)
 		return;
 	for (i = 0; i <= n; i++)
 	{
-		for (j = 0; j <= n; i++)
+		for (j = 0; j <= n; j++)
 		{
 			if (i * j < 10)
 			{
 				if (j != n)
-					printf("  %i, ", i);
+					printf("  %i, ", i * j);
 				else
-					printf("  %i", i);
+					printf("  %i", i * j);
 			}
 
 			else if (i * j >= 100)
 			{
 				if (j != n)
-					printf("%i, ", i);
+					printf("%i, ", i * j);
 				else
-					printf("%i", i);
+					printf("%i", i * j);
 			}
 			else
 			{
 				if (j != n)
-					printf(" %i, ", i);
+					printf(" %i, ", i * j);
 				else
-					printf(" %i", i);
+					printf(" %i", i * j);
 			}
 		}
 		_putchar('\n');
