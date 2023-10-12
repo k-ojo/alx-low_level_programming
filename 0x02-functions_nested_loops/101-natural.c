@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char i;
+	int i;
 	int count = 0;
 	for (i = 0; i < 1024; i++)
 	{
@@ -15,6 +15,6 @@ int main(void)
 			count += i;
 	}
 
-	printf(count);
+	printf("%i",count);
 	return (0);
 }
