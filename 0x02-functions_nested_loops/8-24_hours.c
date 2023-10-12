@@ -8,7 +8,7 @@ void jack_bauer(void)
 {
 	char i, j, k, l;
 
-	for (i = 0; i <= 2)
+	for (i = 0; i <= 2; i++)
 		for (j = 0; j <= 5; j++)
 		{
 			for (k = 0; k <= 5; k++)
