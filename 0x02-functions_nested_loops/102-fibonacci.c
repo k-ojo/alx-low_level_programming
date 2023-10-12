@@ -12,13 +12,13 @@ int main(void)
 	f = 1;
 	s = 2;
 
-	printf("1, 2,");
-	for (i = 0; i <= 50; i++)
+	printf("1, 2, ");
+	for (i = 0; i < 48; i++)
 	{
 		c = f + s;
-		s = c;
 		f = s;
-		if (i == 50)
+		s = c;
+		if (i == 47)
 			printf("%li\n", c);
 		else
 			printf("%li, ", c);
