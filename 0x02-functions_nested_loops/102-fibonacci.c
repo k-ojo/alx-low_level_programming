@@ -7,10 +7,9 @@
  */
 int main(void)
 {
-	int f, s, c;
+	int f, s, c, i;
 	f = 1;
 	s = 2;
-	char i;
 
 	printf("1, 2,");
 	for (i = 0; i <= 50; i++)
