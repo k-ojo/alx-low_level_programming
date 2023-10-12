@@ -21,7 +21,7 @@ void print_times_table(int n)
 				if (j != n)
 					printf("  %i, ", i * j);
 				else
-					printf("  %i", i * j);
+					printf("  %i\n", i * j);
 			}
 
 			else if (i * j >= 100)
@@ -29,16 +29,15 @@ void print_times_table(int n)
 				if (j != n)
 					printf("%i, ", i * j);
 				else
-					printf("%i", i * j);
+					printf("%i\n", i * j);
 			}
 			else
 			{
 				if (j != n)
 					printf(" %i, ", i * j);
 				else
-					printf(" %i", i * j);
+					printf(" %i\n", i * j);
 			}
 		}
-		_putchar('\n');
 	}
 }
