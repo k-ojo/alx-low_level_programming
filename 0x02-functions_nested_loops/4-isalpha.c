@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isalpah- checks if character is alphabet
+ * _isalpha- checks if character is alphabet
  * @c: character to be checked
  *
  * Return: 1 if alphabet
@@ -20,7 +20,7 @@ int _isalpha(int c)
 	for (i == 'A'; i <= 'Z'; i++)
 	{
 		if (i == c)
-			return (1)
+			return (1);
 	}
 	return (0);
 }
