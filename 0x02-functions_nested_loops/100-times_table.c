@@ -27,7 +27,7 @@ void print_times_table(int n)
 			else if (i * j >= 100)
 			{
 				if (j != n)
-					pintf("%i, ", i);
+					printf("%i, ", i);
 				else
 					printf("%i", i);
 			}
