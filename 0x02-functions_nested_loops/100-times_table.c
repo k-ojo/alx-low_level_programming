@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_times_table- computes multiplication table of n size
@@ -18,9 +19,9 @@ void print_times_table(int n)
 			if (i * j < 10)
 			{
 				if (j != n)
-					print("  %i, ", i);
+					printf("  %i, ", i);
 				else
-					print("  %i", i);
+					printf("  %i", i);
 			}
 
 			else if (i * j >= 100)
@@ -33,9 +34,9 @@ void print_times_table(int n)
 			else
 			{
 				if (j != n)
-					print(" %i, ", i);
+					printf(" %i, ", i);
 				else
-					print(" %i", i);
+					printf(" %i", i);
 			}
 		}
 		_putchar('\n');
