@@ -9,12 +9,13 @@ int main(void)
 {
 	int i;
 	int count = 0;
+
 	for (i = 0; i < 1024; i++)
 	{
 		if (i % 5 == 0 || i % 3 == 0)
 			count += i;
 	}
 
-	printf("%i",count);
+	printf("%i\n", count);
 	return (0);
 }
