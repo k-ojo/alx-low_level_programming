@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * _strlen- computes the length of string
+ * print_rev- computes the length of string
  * @s: input string
  *
- * Return: length of string
  */
-int _strlen(char *s)
+void print_rev(char *s)
 {
 	int i = 0;
 	int count = 0;
@@ -18,7 +17,7 @@ int _strlen(char *s)
 	}
 	for (i = count - 1; i >= 0; i--)
 	{
-		_putchar(s);
+		_putchar(s[i]);
 	}
 	_putchar('\n');
 }
