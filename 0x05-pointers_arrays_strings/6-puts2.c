@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- *_puts2- prints string to stdout
+ *puts2- prints string to stdout
  * @str: input string
  *
  */
-void _puts2(char *str)
+void puts2(char *str)
 {
 	int i = 0;
 
