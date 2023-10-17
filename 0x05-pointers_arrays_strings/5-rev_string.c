@@ -15,8 +15,8 @@ void rev_string(char *s)
 		count += 1;
 		i++;
 	}
-
-	char temp[count];
+	int const c = count;
+	char temp[c];
 
 	for (i = count - 1; i > 0; i--)
 	{
