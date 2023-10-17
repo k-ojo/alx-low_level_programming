@@ -17,10 +17,13 @@ void rev_string(char *s)
 		i++;
 	}
 
-	for (i = count - 1; i >= 0; i--)
+	for (i = 0; i < count; i++)
 	{
-		temp = s[count - 1 - i];
-		s[count - 1  - i] = s[i];
-		s[i] = temp;
+		if (i <= cout - 1 -i)
+		{
+			temp = s[count - 1 - i];
+			s[count - 1  - i] = s[i];
+			s[i] = temp;
+		}
 	}
 }
