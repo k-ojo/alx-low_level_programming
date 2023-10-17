@@ -9,9 +9,9 @@ void puts2(char *str)
 {
 	int i = 0;
 
-	while (1)
+	while (str[i] != '\0')
 	{
-		if (str[i] == '\0')
+		if(i > 0 && str[i - 1] == '\0')
 			break;
 		_putchar(str[i]);
 		i += 2;
