@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
- * _strpbrk-searches for firsr letter in accept
- * @s: string to compare
+ * _strpbrk- finds the first match in s
+ * @s: input string
  * @accept: search string
  *
- * Return: pointer to first letter found
+ * Return: pointer first match
  */
-unsigned int _strpbrk(char *s, char *accept)
+char * _strpbrk(char *s, char *accept)
 {
 	int i, j;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j = 0; s[j] != '\0'; j++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
 			if (s[i] == accept[j])
 				return (s + i);
