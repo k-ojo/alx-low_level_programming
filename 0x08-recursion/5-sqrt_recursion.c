@@ -24,5 +24,5 @@ int my_sqrt_recursion(int n, int b)
  */
 int _sqrt_recursion(int n)
 {
-	my_sqrt_recursion(n, 1);
+	return (my_sqrt_recursion(n, 1));
 }
