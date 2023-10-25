@@ -7,7 +7,7 @@
  *
  * Return: square-root of n
  */
-int my_sqrt_recursion(int n, b)
+int my_sqrt_recursion(int n, int b)
 {
 	if (n - b == 0)
 		return ((b / 2) + 1);
