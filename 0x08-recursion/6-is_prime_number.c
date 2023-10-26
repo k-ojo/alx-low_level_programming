@@ -7,7 +7,7 @@
  * Return: 1 if prime
  * 0 if not
  */
-int my_is_prime_number(int n, int i)
+int my_is_prime_number(int n, long int i)
 {
 	if (n == 2 || n == 3)
 		return (1);
