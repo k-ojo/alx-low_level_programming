@@ -40,6 +40,9 @@ int test_palin(char *s, int size, int l)
  */
 int is_palindrome(char *s)
 {
-       	int size = _strlen(s);
-       	return (test_palin(s, size - 1, size -1));
+	int size = _strlen(s);
+
+	if (size % 2 == 0 && s[size / 2] != s[size / 2 - 1])
+		return (0);
+	return (test_palin(s, size - 1, size - 1));
 }
