@@ -34,7 +34,7 @@ char *_strdup(char *str)
 
 	ptr = malloc(sizeof(char) * (n));
 
-	if(ptr == 0 || n == 0)
+	if (ptr == 0 || n == 0 || str == 0)
 		return (0);
 
 	while (*(str + i) != '\0')
