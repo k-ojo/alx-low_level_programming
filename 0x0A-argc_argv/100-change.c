@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	change = param / 25 + (param % 25)/10 + ((param % 25) % 10 )/5;
+	change = param / 25 + (param % 25) / 10 + ((param % 25) % 10) / 5;
 	change +=  (((param % 25) % 10) % 5) / 2;
 	change += ((((param % 25) % 10) % 5) % 2) / 1;
 	printf("%i\n", change);
