@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		j = 0;
 		str = argv[i];
 
-		while(str[j] != '\0')
+		while (str[j] != '\0')
 		{
 			if (str[j] < 48 || str[j] > 57)
 			{
