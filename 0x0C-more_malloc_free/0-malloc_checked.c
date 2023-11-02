@@ -4,7 +4,7 @@
 /**
  * malloc_checked- allocates memory
  *
- * @b size of memory block
+ * @b: size of memory block
  *
  * Return: pointer to the allocated memory block
  */
