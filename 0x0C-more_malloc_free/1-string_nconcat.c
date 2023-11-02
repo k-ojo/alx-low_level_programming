@@ -8,7 +8,7 @@
  * @s2:input string
  * @n: number of characters in s2
  *
- * Return: Pointer to concatenated string 
+ * Return: Pointer to concatenated string
  * null if not successful.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
