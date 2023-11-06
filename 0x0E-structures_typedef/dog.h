@@ -7,7 +7,8 @@
  * @name: name of dog
  * @age: age of dog
  * @owner: owner name
- * Description: This is a data structer that stores name of dog, it's age, and the owner's name
+ * Description: This is a data structer that store
+ * s name of dog, it's age, and the owner's name
  */
 struct dog
 {
