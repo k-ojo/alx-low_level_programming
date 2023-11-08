@@ -1,5 +1,5 @@
-#ifndef
-#define
+#ifndef FUCTION_H
+#define FUNCTION_H
 #include <stddef.h>
 int _putchar(char c);
 void print_name(char *name, void (*f)(char *));
