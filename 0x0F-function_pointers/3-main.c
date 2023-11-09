@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	num2 = atoi(argv[3]);
 	operator = argv[2];
 	f = get_op_func(operator);
-	if (!f)
+	if (!f || *(operator + 1) != 0)
 	{
 		printf("Error\n");
 		exit(99);
