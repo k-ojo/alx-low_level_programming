@@ -7,16 +7,18 @@
  *
  * Return: sum of n inputs
  */
-void print_numbers(const char *seperator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
 	unsigned int i;
 
+	if (separator == 0)
+		return;
 	va_start(ap, n);
 
 	for (i = 0; i < n - 1; i++)
 	{
-		printf("%i%s ", va_arg(ap, int), seperator);
+		printf("%i%s ", va_arg(ap, int), separator);
 	}
 	printf("%i\n", va_arg(ap, int));
 	va_end(ap);
