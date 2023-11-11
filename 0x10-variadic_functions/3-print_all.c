@@ -4,8 +4,7 @@
 /**
  * print_all-print n input numbers
  *
- i* @n:number of input inputs
- * @separator: separator
+ i* @format: format list
  *
  * Return: sum of n inputs
  */
@@ -23,7 +22,7 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				printf("%c", va_arg(lists, int));
+				printf("%c", (char)va_arg(lists, int));
 				break;
 			case 'i':
 				printf("%i", va_arg(lists, int));
@@ -41,8 +40,8 @@ void print_all(const char * const format, ...)
 					printf("(nil)");
 				break;
 		}
-		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' || 
-					format[i] == 's') && format[(i + 1)] != '\0')
+		if ((format[i] == 'c' || format[i] == 'i'
+					|| format[i] == 'f' || format[i] == 's' && format[(i + 1)] != '\0')
 		{
 			printf(", ");
 		}
