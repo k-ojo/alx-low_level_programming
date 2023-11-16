@@ -61,7 +61,7 @@ int print_int(int n)
 }
 
 /**
- * print_node - prints node 
+ * print_node - prints node
  *
  * @h: input node
  *
@@ -102,6 +102,7 @@ void print_node(const list_t *h)
 size_t print_list(const list_t *h)
 {
 	int count = 0;
+
 	while (h->next != 0)
 	{
 		print_node(h);
