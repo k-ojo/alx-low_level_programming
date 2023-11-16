@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
-#include <unistd.h>
 
 /**
  * print_node - prints node
@@ -11,14 +9,13 @@
 void print_node(const list_t *h)
 {
 
-	printf("[%i] ", h->len);
 	if (!h->str)
 	{
-		printf("(null)\n");
+		printf("[%d] (null)\n", 0);
 	}
 	else
 	{
-		printf("%s\n", h->str);
+		printf("[%d] %s\n", h->len, h->str);
 	}
 }
 
