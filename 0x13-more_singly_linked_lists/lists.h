@@ -5,7 +5,7 @@
 
 /**
  * struct listint_s - singly linked list
- * @int - (malloc'ed string)
+ * @n: integer
  *
  * @next: points to the next node
  *
