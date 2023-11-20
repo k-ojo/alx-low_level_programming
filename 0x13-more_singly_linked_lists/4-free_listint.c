@@ -1,20 +1,19 @@
 #include "lists.h"
 
 /**
- * free_list- free list
+ * free_listint- free list
  *
  * @head: input list
  *
  */
-void free_list(list_t *head)
+void free_listint(listint_t *head)
 {
-	list_t *tmp;
+	listint_t *tmp;
 
 	while (head != 0)
 	{
 		tmp = head;
 		head = head->next;
-		free(tmp->str);
 		free(tmp);
 	}
 }
