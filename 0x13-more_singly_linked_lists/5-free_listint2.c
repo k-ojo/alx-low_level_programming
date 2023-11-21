@@ -9,7 +9,7 @@ void free_listint2(listint_t **h)
 {
 	listint_t *tmp;
 
-	if (**h == 0)
+	if (h == 0)
 	{
 		return;
 	}
