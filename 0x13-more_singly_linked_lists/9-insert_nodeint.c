@@ -1,64 +1,46 @@
 #include "lists.h"
 
 /**
- * insert_nodeint_at_index - returns the nth node of a linked list
- * @head: pointer to the head of the list
- * @idx: index of the node to be added
- * @n: content of the new node
+ * insert_nodeint_at_index- inserts new element at n linked list
+ * @head: input list
+ * @idx: index
+ * @n: input integer
  *
- * Return: the address of the node
+ * Return: new datum
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *new_node = NULL;
-	listint_t *previous_node = NULL;
-	unsigned int i = 0;
+	unsigned int i = 1;
+	listint_t *new, *prev, *h;
 
-	new_node = malloc(sizeof(listint_t));
-	if (new_node == NULL || idx > listint_len(*head))
+
+	if (!head || *head == 0)
+		return (0);
+
+	new = malloc(sizeof(listint_t));
+	new->n = n;
+	if (!new)
+		return (0);
+	if (idx == 0)
 	{
-		free(new_node);
-		return (NULL);
+		new->next = *head;
+		return (new);
 	}
-	new_node->n = n;
-	new_node->next = NULL;
-	while (head != NULL)
+	prev = *head;
+	h = (*head)->next;
+
+	while (*head != 0)
 	{
 		if (i == idx)
 		{
-			if (i == 0)
-			{
-				new_node->next = *head;
-				*head = new_node;
-				return (new_node);
-			}
-			new_node->next = previous_node->next;
-			previous_node->next = new_node;
-			return (new_node);
+			prev->next = new;
+			new->next = h;
+			return (new);
 		}
-		else if ((i + 1) == idx)
-			previous_node = *head;
-		head = &((*head)->next);
+		prev = h;
+		h = (h)->next;
 		i++;
 	}
-	return (NULL);
-}
-
-/**
- * listint_len - counts the number of nodes in a linked list
- * @h: head of the list
- *
- * Return: the number of elements
- */
-size_t listint_len(const listint_t *h)
-{
-	const listint_t *cursor = h;
-	size_t count = 0;
-
-	while (cursor != NULL)
-	{
-		count += 1;
-		cursor = cursor->next;
-	}
-	return (count);
+	free(new);
+	return (0);
 }
