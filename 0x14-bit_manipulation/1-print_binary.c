@@ -9,17 +9,17 @@
  */
 void print_binary(unsigned long int num)
 {
-	int flag = 0;
+	int indicator = 0;
 	int cont = 0;
-	int i, a = 1, b, size = sizeof(num) * 8;
+	int i, b, size = sizeof(unsigned long int) * 8;
 	unsigned long int p;
 
 	for (i = 0; i < size; i++)
 	{
-		p = ((a << (size - 1 - i)) & num);
+		p = ((1 << (size - 1 - i)) & num);
 		if (p >> (size - 1 - i))
-			flag = 1;
-		if (flag)
+			indicator = 1;
+		if (indicator)
 		{
 			b = p >> (size - 1 - i);
 			_putchar(b + 48);
