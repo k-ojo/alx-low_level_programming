@@ -36,6 +36,8 @@ int get_bit(unsigned long int n, unsigned int index)
 	unsigned int len = get_len(n, 0) + 1;
 	unsigned int b, i = 0;
 
+	if (n == 0 && index < len)
+		return (0);
 	for (i = 0; i < len; i++)
 	{
 		b = n & 1;
