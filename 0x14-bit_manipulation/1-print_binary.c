@@ -3,7 +3,7 @@
 
 /**
  * print_binary - prints a binary number.
- * @num: input int
+ * @n: input int
  * Return: nothing
  *
  */
