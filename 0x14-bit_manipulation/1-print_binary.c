@@ -11,8 +11,8 @@ void print_binary(unsigned long int num)
 {
 	int indicator = 0;
 	int cont = 0;
-	int i, b, size = sizeof(unsigned long int) * 8;
-	unsigned long int p;
+	int i, size = sizeof(unsigned long int) * 8;
+	unsigned long int p, b;
 
 	for (i = 0; i < size; i++)
 	{
