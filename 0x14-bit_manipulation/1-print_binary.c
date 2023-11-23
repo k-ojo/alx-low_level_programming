@@ -7,26 +7,15 @@
  * Return: nothing
  *
  */
-void print_binary(unsigned long int num)
+void print_binary(unsigned long int n)
 {
-	int indicator = 0;
-	int cont = 0;
-	int i, size = sizeof(unsigned long int) * 8;
-	unsigned long int p, b;
-
-	for (i = 0; i < size; i++)
+	if (n)
 	{
-		p = ((1 << (size - 1 - i)) & num);
-		if (p >> (size - 1 - i))
-			indicator = 1;
-		if (indicator)
-		{
-			b = p >> (size - 1 - i);
-			_putchar(b + 48);
-			cont++;
-		}
+		if (n >> 1)
+			print_binary(n >> 1);
+		_putchar((n & 1) + '0');
 	}
-	if (cont == 0)
+	else
 	{
 		_putchar('0');
 	}
