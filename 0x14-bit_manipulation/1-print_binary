@@ -1,0 +1,15 @@
+#include "main.h"
+
+/**
+ * print_binary- print binary number
+ * @n: input integer
+ *
+ * Return: nothing
+ */
+void print_binary(unsigned long int n)
+{
+	int i, bit = 0, int_size = sizeof(unsigned long int) * 8;
+
+	for (i = 0; i < int_size; i++)
+	{
+		b = n 
