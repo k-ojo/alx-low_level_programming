@@ -2,18 +2,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * set_bit- sets bit at index
+ * clear_bit- clears bit at index, set bit to 0 at index
  *
  * @n: input int
  * @index: index
  *
  * Return: bit or -1 if fails
  */
-int set_bit(unsigned long int *n, unsigned int index)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
 	if (index < 64)
 	{
-		*n |= 1 << (index);
+		*n &= ~(1 << (index));
 		return (1);
 	}
 	return (-1);
