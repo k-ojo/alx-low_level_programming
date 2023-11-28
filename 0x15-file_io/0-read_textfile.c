@@ -10,21 +10,19 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	size_t i = 0;
-	char letter;
-	FILE *file = fopen(filename, "r");
+	char *b;
+	ssize_t width, read_count;
+	ssize_t file = open(filename, O_RDONLY);
 
-	if (file)
+	if (file != -1)
 	{
-		while ((letter = fgetc(file)) != EOF && i <= letters)
-		{
-			dprintf(STDOUT_FILENO, "%c", letter);
-			i++;
-		}
-		fclose(file);
-		return (i);
+		b = malloc(sizeof(char) * letters);
+		read_count = read(file, b, letters);
+		width = write(STDOUT_FILENO, b, read_count);
+		close(file);
+		free(b);
+		return (width);
 	}
 
 	return (0);
-
 }
