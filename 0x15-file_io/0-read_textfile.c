@@ -5,6 +5,8 @@
  *
  * *@filename: Name of file to read from
  * @letters: number of letters read
+ *
+ * Return: the number of printed chars
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -19,7 +21,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 			dprintf(STDOUT_FILENO, "%c", letter);
 			i++;
 		}
+		close(file);
 		return (i);
 	}
+
 	return (0);
+
 }
