@@ -1,1 +1,30 @@
-VimCrypt~03!?Vİ£{SFHÉ%Şø­:ğQò——4ÀŠÁ–cò@¦.¸I1¢İKºYsSK¸?BÛ1•şu§B7§Wãb˜Û¦şò
+# Custom String Library
+
+A lightweight and efficient custom string library for C that provides safer and more convenient string manipulation utilities than the standard C library. Designed for embedded systems, low level projects, and applications where fine grained control and predictable behavior are required.
+
+## Features
+
+This library includes:
+
+â€¢ Dynamic strings with automatic resizing  
+â€¢ Safe versions of common operations such as copy, concat, trim, and compare  
+â€¢ Substring extraction and search functions  
+â€¢ Case conversion utilities  
+â€¢ String splitting and joining  
+â€¢ Memory safe creation and destruction routines
+
+## Why Use This Library
+
+The standard C string functions are powerful but can be error prone due to their lack of bounds checking and limited abstraction. This library provides:
+
+â€¢ Safer defaults  
+â€¢ Clear API for dynamic memory control  
+â€¢ Consistent return values for error handling  
+â€¢ Improved readability and maintainability
+
+## Getting Started
+
+### Include the Header
+
+```c
+#include "cstring.h"
