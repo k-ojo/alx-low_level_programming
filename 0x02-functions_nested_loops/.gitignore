@@ -1,2 +1,11 @@
+# Ignore build artifacts and temporary files
+bin/
+*.o
+main
+a.out
+*.out
+*.exe
+*~
+*.swp
 main.c
 _putchar.c

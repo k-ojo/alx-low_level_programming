@@ -1,7 +1,3 @@
-# Custom String Library
-
-A lightweight and efficient custom string library for C that provides safer and more convenient string manipulation utilities than the standard C library. Designed for embedded systems, low level projects, and applications where fine grained control and predictable behavior are required.
-
 # ALX — Low-level Programming (C)
 
 This repository contains the ALX School projects and exercises for learning low-level programming in C. It is organized by topic (Hello World, variables, functions, pointers, recursion, data structures, and more) and contains small programs, exercises, and examples used to teach C fundamentals and system-level programming concepts.
@@ -95,7 +91,7 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 4-puts.c -o puts_example
 
 ## License
 
-No license file is included in this repository. If you want to add a license (e.g., MIT), tell me and I can create a `LICENSE` file.
+This project is licensed under the MIT License — see the `LICENSE` file for details.
 
 ---
 

@@ -1,1 +1,37 @@
+# General ignores for this repository
+
+# Compiled object files
+*.o
+
+# Executables
+main
+a.out
+*.out
+*.exe
+
+# Backup and swap files
+*~
+*.swp
+*.swo
+
+# Editor/IDE directories
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# Tags
+tags
+
+# Ignore build bins
+bin/
+**/bin/
 *main.c

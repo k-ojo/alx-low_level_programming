@@ -16,11 +16,12 @@ int main(void)
 		{
 			putchar(i + '0');
 			putchar(z + '0');
-			if (i != 9 && z ! = 9)
+			if (i != 9 && z != 9)
 			{
 				putchar(',');
 				putchar(' ');
 			}
+		}
 	}
 
 	putchar('\n');
